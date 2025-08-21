@@ -1,0 +1,38 @@
+# Time Gap...
+
+inputs:
+1.
+5:42 am to 6:53 am => ? hr ? min
+time gap : 1 hr 11 min 
+
+2.
+8:22 am to 7:15 pm => ? hr ? min
+time gap : 10 hr 53 min
+
+# logic
+if pm => hr+=12
+
+edge cases
+12:00 am => 0:00 
+12:00 pm => 12:00
+
+time gap = t2 - t1
+if t2_hr < t1_hr => t2_hr += 24
+if t2_min < t1_min => t2_min+=60, t2_hr-=1
+
+# Gap-time
+
+if time is currently 5:30 am what would be the time after 6hr 47min?
+i want to know 
+how would i calculate?
+first i will extract minutes from time 
+5: 30 will be 5hr 30min now 5hr + 6 hr = 11hr and 47min+30min=77min => 1hr 17 min
+=>11hr + 1 hr=12 hr and 17min =>12:17 pm
+
+extract hrs and minutes add minutes if minutes>60 => 1 hr max case 59+59=118=>60min+58min
+if it was 5:30 pm time after 6hr 17min would be 12:17 am
+
+now time is 5:30 am time after 11 hrs => 5+11 = 16 =>16:30 pm => 4:30 pm
+now time is 5:30 pm time after 11 hrs => 5+11 = 16 =>16: 30 am => 4:30 am
+
+if time crosses 12 am->pm or pm->am, time->time-12

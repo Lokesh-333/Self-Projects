@@ -1,0 +1,42 @@
+hand cricket...pseudo code
+
+first the computer asks player odd or eve, eve means even. 
+meaning if sum of both
+their number choices is eve, and player selects eve, he wins the toss.
+the sum is the choices of player and computer
+the player can choose number from 1 to 4
+computer also selects the number from 1 to 4
+
+so theres something like this,
+
+---TOSS---
+player chooses eve sum is even player wins the toss, and can choose to bat or ball.
+player chooses eve sum is odd computer wins the toss, and it may select to bat or ball.
+player chooses odd sum is odd player wins the toss, and can choose to bat or ball.
+player chooses odd sum is even computer wins the toss, and it may select to bat or ball.
+----------
+
+so in toss there are total of 2 possiblilities
+player win : eve sum even (or) odd sum odd
+computer win : eve sum odd (or) odd sum eve
+
+so if player wins there are two choices he may bat or ball
+if computer wins there are two choices it may select to bat or ball
+
+meaning a total of 4 possiblilities
+
+they are 1.player win - bat 
+         2.player win - ball
+         3.player loose - computer bat
+         4.player loose - computer ball
+
+senario 1.
+player win - chooses to bat
+so he bat first , then makes a target for computer
+then computer balls then if computer reaches the target computer wins
+or if computer not reach the target then player wins
+
+wait... 
+
+player win choosing to bat is same as computer win choosing to ball...
+player win choosing to ball is same as computer win choosing to bat...
